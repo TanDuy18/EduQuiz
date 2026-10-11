@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "EduQuiz",
+    "slug": "eduquiz",
+    "scheme": "eduquiz",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./public/IconApp.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./public/IconApp.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.eduquiz.app"
+    },
+    "web": {
+      "favicon": "./public/IconApp.png"
+    },
+    "plugins": [
+      "expo-web-browser"
+    ]
+  }
+}
