@@ -1,0 +1,137 @@
+.eq-header {
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  padding: 0 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eef1f5;
+}
+
+
+.eq-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex: 1;
+  justify-content: center;
+}
+
+.eq-nav a::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  bottom: -20px;
+  left: -14px;
+  right: -14px;
+}
+.eq-nav a {
+  position: relative;
+  padding: 8px 0;
+  color: #64748b;
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-family: 300;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.15s ease;
+}
+
+.eq-nav a:hover {
+  color: #2563eb;
+}
+
+.eq-nav a.active {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.eq-nav a.active::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #2563eb;
+}
+
+.eq-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* Search */
+.eq-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 50%;
+  color: #64748b;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.eq-icon-btn:hover {
+  color: #2563eb;
+  background-color: #eff6ff;
+}
+
+.eq-btn-outline,
+.eq-btn-primary {
+  height: 32px;
+  padding: 0 14px;
+  border-radius: 18px;
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    background-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.eq-btn-outline {
+  color: #172554;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+.eq-btn-outline:hover {
+  background-color: #f8fafc;
+}
+
+.eq-btn-primary {
+  color: #ffffff;
+  background-color: #2563eb;
+  border: 1px solid #2563eb;
+}
+
+.eq-btn-primary:hover {
+  background-color: #1d4ed8;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+}
+
+/* Responsive: co nhỏ dần khi màn hình hẹp */
+@media (max-width: 768px) {
+  .eq-header {
+    padding: 0 14px;
+  }
+  .eq-nav {
+    display: none;
+  }
+  .eq-btn-outline {
+    display: none; /* ẩn bớt để không vỡ layout trên mobile, tuỳ bạn giữ hay bỏ */
+  }
+}

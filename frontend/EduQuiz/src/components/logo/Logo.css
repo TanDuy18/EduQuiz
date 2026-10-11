@@ -1,0 +1,25 @@
+.eq-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+}
+
+.eq-logo-text {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a; 
+  letter-spacing: -0.5px;
+}
+.eq-logo-text .highlight {
+  color: #2563eb;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+.eq-logo svg {
+  color: #2563eb;
+}

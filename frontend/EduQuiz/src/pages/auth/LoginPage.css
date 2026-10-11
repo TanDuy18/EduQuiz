@@ -1,0 +1,124 @@
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  background-color: #fff6ef;
+  padding: 0 1rem;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 48rem;
+  background-color: transparent;
+}
+
+.login-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+
+.input-box{
+    display: flex; 
+    width: 65%;
+    align-items: center;
+    border: 2px solid #e5e7eb;
+    border-radius: 2rem;
+    padding: 0 0.875rem; 
+    transition: border-color 0.15s;
+}
+
+.input-box:focus-within{
+    border-color:#fb923c;
+}
+
+.input-icon{
+  width: 1.2rem;
+  height: 1.2rem;
+  color: #9ca3af;
+  flex-shrink: 0;     
+  margin-right: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+.input-box input {
+    color: black;
+  flex: 1;      
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0.85rem 0;  
+  margin: 0 0 0 0.25rem ;
+  font-size: 1rem;
+  min-width: 0;
+}
+
+.input-group label {
+  position: absolute;
+  left:21.5%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff6ef;
+  padding: 0 0.25rem;
+  color: #9ca3af;
+  font-size: 0.95rem;
+  pointer-events: none;
+  transition: all 0.15s ease;
+}
+
+
+.input-box input:focus + label,
+.input-box input:not(:placeholder-shown) + label {
+  top: 0;
+  left:21.5%;
+  font-size: 0.785rem;
+  color: #fb923c;
+}
+
+.loginForm button{ 
+    width: 33rem;
+    padding: 0.85rem 0;  
+    border: 1px solid #FDE2CF;
+    border-radius: 2rem;
+    background-color: #FDE2CF;
+    color: #8e6c50 ;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  width: 50%;              /* khớp với width của input-box/button ở trên */
+  margin: 1.5rem auto;      /* auto 2 bên để tự canh giữa trong .login-card */
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+.divider span{
+    font-weight: 600;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #e5e7eb;
+}
+
+.divider::before {
+  margin-right: 0.75rem;
+}
+
+.divider::after {
+  margin-left: 0.75rem;
+}
